@@ -1,23 +1,22 @@
 @keyframes fadein {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(20px); }
+  0% { transform: translateY(-100%) translateX(-50%); }
+  100% { transform: translateY(20px) translateX(-50%); }
 }
 
 @keyframes fadeout {
-  0% { transform: translateY(20px); }
-  100% { transform: translateY(-100%); }
+  0% { transform: translateY(20px) translateX(-50%); }
+  100% { transform: translateY(-100%) translateX(-50%); }
 }
 
 @keyframes toggle {
-  0% { transform: translateY(20px); }
-  100% { transform: translateY(-100%); }
+  0% { transform: translateY(20px) translateX(-50%); }
+  100% { transform: translateY(-100%) translateX(-50%); }
 }
 
 .popup {
-  transform: translateY(20px);
   top: 0;
   left: 50%;
-  margin-left: -250px;
+  transform: translateY(20px) translateX(-50%);
   position: fixed;
   width: 500px;
   border-radius: 5px;
@@ -28,17 +27,18 @@
   animation-duration: .5s;
   animation-iteration-count: 1;
   z-index: 4;
+  max-width: 90%;
 }
 
 .closing {
-  transform: translateY(20px);
+  transform: translateY(20px) translateX(-50%);
   animation-name: fadeout;
   animation-duration: .5s;
   animation-iteration-count: 1;
 }
 
 .changing {
-  transform: translateY(20px);
+  transform: translateY(20px) translateX(-50%);
   animation-name: toggle;
   animation-duration: .5s;
   animation-iteration-count: 1;
@@ -59,6 +59,13 @@
   justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+  .spaceBetween {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 .col {
   width: calc(50% - 8px);
   padding-left: 16px;
@@ -66,6 +73,15 @@
 
 .col:first-child {
   border-right: 2px solid #efefef;
+}
+
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
+  .col:first-child {
+    border-right: none;
+  }
 }
 
 .col li {

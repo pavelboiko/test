@@ -8,6 +8,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  .settingsWrap {
+    margin-top: 25px;
+    width: 100%;
+  }
+}
+
 @keyframes loader {
   0% { border-right-color: rgb(255, 45, 85); border-left-color: rgb(255, 45, 85); transform: rotate(0deg); }
   15% { border-right-color: rgb(88, 86, 214); border-left-color: rgb(88, 86, 214); }

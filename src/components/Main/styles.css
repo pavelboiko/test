@@ -5,6 +5,13 @@
   background: white;
   border-radius: 10px;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .mainWrap {
+    width: 100%;
+  }
 }
 
 .title {

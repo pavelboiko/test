@@ -1,8 +1,8 @@
 .wrap {
   padding: 50px;
-  background: #efefef;
   height: 100vh;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
