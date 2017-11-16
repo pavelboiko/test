@@ -1,0 +1,33 @@
+.counter {
+  margin-left: 15px;
+  display: flex;
+}
+
+.arrow {
+  background: #efefef;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.arrow:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.count {
+  text-align: center;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  line-height: 27px;
+  font-weight: 800;
+}

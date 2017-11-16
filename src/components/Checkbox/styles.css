@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  background: white;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  transition: .2s;
+}
+
+.label {
+  font-weight: 600;
+  color: #ccc;
+  transition: .2s;
+}
+
+.checked .arrow {
+  transition: .2s;
+  background: rgb(76, 217, 100);
+  border: 2px solid rgb(76, 217, 100);
+}
+
+.checked .label {
+  transition: .2s;
+  color: black;
+}
